@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.loader {
+  @include spin;
+  border: 2px solid $white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  background-color: $primary;
+  color: $white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 8px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  width: 100%;
+  box-shadow: 0;
+  transition: box-shadow 0.2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  &:disabled {
+    opacity: 0.6;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0px 0px;
+  }
+}
+
+.outlineButton {
+  border: 1px solid $primary;
+  color: $primary;
+  background-color: $white;
+}
