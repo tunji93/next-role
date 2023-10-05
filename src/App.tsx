@@ -3,7 +3,8 @@ import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import Google from "./assets/google.png";
 import { HIworks } from "./components/HIworks";
-import Phone from "./assets/phone.png"
+import Phone from "./assets/phone.png";
+import People from "./assets/people.jpg"
 
 function App() {
   return (
@@ -80,9 +81,9 @@ function App() {
           marginTop: "80px",
         }}
       >
-        <div>
-          <img src={""} alt="people" />
-        </div>
+     
+          <img src={People} height="350" alt="people" />
+      
 
         <div
           style={{
@@ -197,11 +198,35 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            width: "550px",
+          }}
+        >
           <img src={Phone} height="250" alt="phone" />
-          <div>
-            <img height="60" src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg" alt="app store" />
-            <img height="60" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_GSGDneF42Y3lPYO4HHsKm8pyRHyWRJM7er0t0T381hvQAc_ii7Hme_O_Ym6G4fSbAg&usqp=CAU" alt="play store" />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <img
+              style={{
+                marginBottom: "30px",
+              }}
+              height="60"
+              src="https://1000logos.net/wp-content/uploads/2020/08/apple-app-store-logo.jpg"
+              alt="app store"
+            />
+            <img
+              
+              height="60"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_GSGDneF42Y3lPYO4HHsKm8pyRHyWRJM7er0t0T381hvQAc_ii7Hme_O_Ym6G4fSbAg&usqp=CAU"
+              alt="play store"
+            />
           </div>
         </div>
       </section>

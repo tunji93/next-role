@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
       >
         <a href="#" target="_blank" style={{ display: "block" }}>
           <img
-            height={"70px"}
+            height={"80px"}
             src={Logo}
             className="logo"
             alt="NextRole logo"
